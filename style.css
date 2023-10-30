@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Edu+TAS+Beginner&display=swap');
+body {
+    text-align: center;
+    font-family: 'Edu TAS Beginner', cursive;
+    font-size: 1.5rem;
+}
+
+.list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.user-card {
+    display: inline-block;
+    border: 2px solid teal;
+    background: linear-gradient(0.40turn,#e6646580, #9198e5);
+    border-radius: 20px;
+    margin: 10px;
+    padding: 10px;
+    box-shadow: 10px 10px 5px #1a1a1a80;
+    transition: transform 0.8s;
+}
+
+.user-card:hover {
+    transform: scale(1.2);
+}
+
+.user-img {
+    max-width: 100px;
+    border-radius: 50%;
+}
+
+button {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
