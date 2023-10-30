@@ -20,8 +20,8 @@ function afficheUsers(users) {
 
     const userGender =
       user.gender === "male"
-        ? "<img class='male' src='male.png' alt='logo genre'>"
-        : "<img class='female' src='female.png' alt='logo genre'>";
+        ? "<img class='male' src='male.png' alt='logo genre homme'>"
+        : "<img class='female' src='female.png' alt='logo genre femme'>";
     const userName = `${user.name.title} ${user.name.first} ${user.name.last}`;
     const userEmail = user.email;
     const userImg = user.picture.medium;
