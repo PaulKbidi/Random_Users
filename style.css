@@ -13,6 +13,7 @@ body {
 
 .user-card {
     display: inline-block;
+    position: relative;
     border: 2px solid teal;
     background: linear-gradient(0.40turn,#e6646580, #9198e5);
     border-radius: 20px;
@@ -29,6 +30,20 @@ body {
 .user-img {
     max-width: 100px;
     border-radius: 50%;
+}
+
+.male {
+    width: 10%;
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+}
+
+.female {
+    width: 10%;
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
 }
 
 button {

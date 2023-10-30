@@ -18,16 +18,19 @@ function afficheUsers(users) {
     const userCard = document.createElement("div");
     userCard.classList.add("user-card");
 
-    const userGender = user.gender === "male" ? "Homme" : "Femme";
+    const userGender =
+      user.gender === "male"
+        ? "<img class='male' src='male.png' alt='logo genre'>"
+        : "<img class='female' src='female.png' alt='logo genre'>";
     const userName = `${user.name.title} ${user.name.first} ${user.name.last}`;
     const userEmail = user.email;
     const userImg = user.picture.medium;
 
     userCard.innerHTML = `
             <img class="user-img" src="${userImg}" alt="Photo de profil">
-            <p>Genre: ${userGender}</p>
-            <p>Nom et Prénom:<br> ${userName}</p>
-            <p>Email: ${userEmail}
+            <p>${userGender}</p>
+            <p>${userName}</p>
+            <p>${userEmail}</p>
         `;
 
     userList.appendChild(userCard);
